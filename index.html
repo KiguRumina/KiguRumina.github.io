@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ルミナ | Rumina</title>
+  <meta name="description" content="日常にひっそりといる着ぐるみさん、ルミナのホームページ。">
+  <meta property="og:title" content="ルミナ | Rumina">
+  <meta property="og:description" content="日常にひっそりといる着ぐるみさん。">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/photos/14.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#top">ルミナ<span>Rumina</span></a>
+    <nav class="nav">
+      <a href="#slides">スライド</a>
+      <a href="#profile">プロフィール</a>
+      <a href="#gallery">ギャラリー</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- Hero + slideshow -->
+    <div class="hero-wrap">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <section class="hero" id="slides" aria-label="スライドショー">
+      <div class="hero-text">
+        <h1>ルミナ<span class="romaji">Rumina</span></h1>
+        <p class="tagline">日常にひっそりといる<br>着ぐるみさん。</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="https://x.com/KiguRumina" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-6.8 7.8L23 22h-6.2l-4.8-6.3L6.4 22H3.3l7.3-8.3L1 2h6.3l4.4 5.8L18.9 2Zm-1.1 18h1.7L6.3 3.9H4.5L17.8 20Z"/></svg>
+            Xをみる
+          </a>
+          <a class="btn btn-ghost" href="#profile">プロフィール</a>
+        </div>
+      </div>
+
+      <div class="slideshow" tabindex="0" aria-roledescription="carousel">
+        <div class="frame">
+          <div class="slides"></div>
+          <button class="nav-btn prev" type="button" aria-label="前の写真">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5 8 12l7 7"/></svg>
+          </button>
+          <button class="nav-btn next" type="button" aria-label="次の写真">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg>
+          </button>
+          <div class="progress" aria-hidden="true"><span></span></div>
+        </div>
+        <div class="slide-meta">
+          <p class="caption" aria-live="polite"></p>
+          <div class="meta-right">
+            <span class="counter"></span>
+            <button class="play-btn" type="button" aria-label="一時停止">
+              <svg class="i-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14M16 5v14"/></svg>
+              <svg class="i-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5v15l12-7.5z"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="thumbs" aria-label="写真をえらぶ"></div>
+    </div>
+
+    <!-- Profile -->
+    <section class="profile" id="profile">
+      <h2 class="section-title"><span>Profile</span>プロフィール</h2>
+      <div class="profile-card">
+        <img class="avatar" src="images/avatar.webp" alt="ルミナの顔のアップ" width="200" height="200">
+        <div class="profile-body">
+          <p class="hello">はじめまして！<br>ルミナって言います。これからよろしくね。</p>
+          <dl class="facts">
+            <div><dt>なまえ</dt><dd>ルミナ</dd></div>
+            <div><dt>いるところ</dt><dd>千葉県のどこかのお部屋のすみっこ</dd></div>
+            <div><dt>うまれ</dt><dd>Very good man's Mask Studio</dd></div>
+            <div><dt>Xデビュー</dt><dd>2026年6月</dd></div>
+            <div><dt>チャームポイント</dt><dd>アホ毛と目元のほくろ</dd></div>
+          </dl>
+          <a class="x-link" href="https://x.com/KiguRumina" target="_blank" rel="noopener">@KiguRumina →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery-section" id="gallery">
+      <h2 class="section-title"><span>Gallery</span>ギャラリー</h2>
+      <div class="gallery"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© ルミナ · <a href="https://x.com/KiguRumina" target="_blank" rel="noopener">@KiguRumina</a></p>
+  </footer>
+
+  <!-- Lightbox -->
+  <dialog class="lightbox" aria-label="写真の拡大表示">
+    <button class="lb-close" type="button" aria-label="閉じる">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+    </button>
+    <button class="lb-nav lb-prev" type="button" aria-label="前の写真">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5 8 12l7 7"/></svg>
+    </button>
+    <figure>
+      <img alt="">
+      <figcaption></figcaption>
+    </figure>
+    <button class="lb-nav lb-next" type="button" aria-label="次の写真">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg>
+    </button>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
